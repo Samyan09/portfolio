@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Samyan Garg | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Geist:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#003fb1",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#1a56db",
+                        "on-primary-container": "#d4dcff",
+                        "secondary": "#53606c",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#d6e4f3",
+                        "on-secondary-container": "#586672",
+                        "tertiary": "#852b00",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#ad3b00",
+                        "on-tertiary-container": "#ffd4c5",
+                        "background": "#f7f9fb",
+                        "on-background": "#191c1e",
+                        "surface": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface-variant": "#434654",
+                        "outline": "#737686",
+                        "outline-variant": "#c3c5d7",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container": "#eceef0",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-container-highest": "#e0e3e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "0.5rem",
+                        "sm": "1rem",
+                        "md": "1.5rem",
+                        "lg": "2rem",
+                        "xl": "4rem",
+                        "gutter": "24px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "display": ["Inter", "sans-serif"],
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Geist", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(0, 63, 177, 0.05);
+        }
+        .dark-glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .grid-bg {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .dark-grid-bg {
+            background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Navigation -->
+<header class="fixed top-0 w-full bg-surface/60 backdrop-blur-md z-50 border-b border-outline-variant/30">
+<nav class="flex justify-between items-center px-gutter py-md max-w-container-max mx-auto w-full">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-on-primary font-bold">SG</div>
+<span class="font-bold text-xl tracking-tight">Samyan Garg</span>
+</div>
+<ul class="hidden md:flex items-center gap-lg font-medium text-sm text-on-surface-variant">
+<li class=""><a class="hover:text-primary transition-colors" href="#about">About</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#skills">Skills</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#projects">Projects</a></li>
+<li class=""><a class="hover:text-primary transition-colors" href="#contact">Contact</a></li>
+</ul>
+<div class="flex items-center gap-md">
+<a class="bg-[#0f172a] text-white px-6 py-2 rounded-full font-semibold text-sm flex items-center gap-2 transition-all hover:bg-black" href="#">
+                    Resume <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 px-gutter max-w-container-max mx-auto grid-bg overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center w-full">
+<div class="space-y-lg z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/40 backdrop-blur-sm text-primary border border-white/60 rounded-full font-label text-xs font-semibold tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+                        Available for Opportunities
+                    </div>
+<h1 class="font-display text-6xl md:text-7xl font-extrabold text-on-background leading-tight">
+                        Hi, I'm <span class="text-primary">Samyan.</span><br/>
+                        Building software <span class="text-on-surface-variant/40">that solves problems.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Aspiring Software Developer and Cybersecurity Enthusiast passionate about AI, web development, and problem solving. I enjoy building practical software projects and continuously learning new technologies.
+                    </p>
+<div class="flex flex-wrap gap-md pt-4">
+<a class="bg-[#0f172a] text-white px-8 py-3.5 rounded-xl font-semibold flex items-center gap-2 transition-all hover:scale-105" href="#projects">
+                            View My Work <span class="material-symbols-outlined text-sm">south_east</span>
+</a>
+<a class="glass-card px-8 py-3.5 rounded-xl font-semibold transition-all hover:bg-white/80" href="#contact">
+                            Get in Touch
+                        </a>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="absolute -inset-10 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="relative rounded-[2.5rem] overflow-hidden aspect-square shadow-2xl shadow-primary/20 border-8 border-white/60 backdrop-blur-md">
+<img alt="Cybersecurity and Code" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkO5Cq8fqSS6BuT6VcA1ssFvF3CUBDgLzOXD6myhmNivB4MmNkcoba8r-0S27Ws4j5ZE3NPF2Maklq6u4xWccgRpT51k48sHBdSxDFPdLNVfnrtV9Evj0_560f92tkvCcySsDpLy77VuU12Jj6QfNVhcc2Qofyw7Zd6vhsMrF4EFRLh-zmXSqrFkVipJMnOTOF0jiqxO5JVQKGLq3GXhh3vcJ5u1jEBZ7RCUAOAo27TIJeSxB0SxK8g4NQ35aYiXThfeOcP_Gd8w"/>
+<div class="absolute bottom-0 left-0 right-0 p-8 bg-black/40 backdrop-blur-md text-white border-t border-white/10">
+<span class="text-xs font-bold uppercase tracking-widest opacity-60">Focus</span>
+<p class="text-xl font-bold">AI · Web · Cybersecurity</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-xl px-gutter max-w-container-max mx-auto" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<div class="lg:col-span-4 space-y-md">
+<div class="flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase">
+<span class="h-px w-8 bg-primary"></span>
+                        01 — About
+                    </div>
+<h2 class="font-display text-5xl font-extrabold leading-tight">A curious mind.<br/>A builder at heart.</h2>
+</div>
+<div class="lg:col-span-8 space-y-lg">
+<div class="space-y-md max-w-3xl">
+<p class="text-xl leading-relaxed text-on-surface-variant">
+                            I'm an <span class="text-on-surface font-bold">aspiring Software Developer</span> and <span class="text-on-surface font-bold">Cybersecurity Enthusiast</span> passionate about AI, web development, and problem solving.
+                        </p>
+<p class="text-lg leading-relaxed text-on-surface-variant/80">
+                            I enjoy building practical software projects and continuously learning new technologies. Whether I'm wiring up a full-stack web app, exploring how a model thinks, or studying how attackers think, I follow the curiosity.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md pt-lg">
+<div class="glass-card p-8 rounded-3xl transition-all group hover:bg-white/80">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">code</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Full-Stack</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">React, Node.js &amp; Python apps end-to-end.</p>
+</div>
+<div class="glass-card p-8 rounded-3xl transition-all group hover:bg-white/80">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Cybersecurity</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Awareness, defense, and safer software.</p>
+</div>
+<div class="glass-card p-8 rounded-3xl transition-all group hover:bg-white/80">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Always Learning</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">ML, data analysis &amp; new tooling.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Toolbox Section -->
+<section class="py-xl bg-surface-container-low/50 backdrop-blur-sm" id="skills">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="space-y-sm mb-xl">
+<div class="flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase">
+<span class="h-px w-8 bg-primary"></span>
+                        02 — Skills
+                    </div>
+<h2 class="font-display text-5xl font-extrabold">The tools I build with.</h2>
+<p class="text-on-surface-variant max-w-xl text-lg">A working toolkit across languages, the web stack, and the domains I'm most excited to grow in.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Languages -->
+<div class="glass-card p-8 rounded-[2.5rem] relative">
+<span class="absolute top-8 right-8 text-xs font-bold text-on-surface-variant/30">01</span>
+<h3 class="font-bold text-xl mb-8">Languages</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="Python" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARg95Rbi97V3rMUbNXjritYimYpJ-oPYqNO-1e7XhaNqx5pXTWBR6frOnebpsygbNAYAZ6ddstr93AzCVNum3_6KufVHmEWYcpqZuIYEAnC4Wrv93N17jVZDR82aED14rpQJ34Q2REb7MmX0cqI9q1wJ4sjEYo1t_G9tD40DYqimcX2To939F3JPweG5kM86-9LqEEzjw4pSxF26b3SD_IweLeov82cd2MK02Q5gXbvOxlJMxX_lYG_lgMm5jHCnz1poRrRKOejg"/> Python
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="Java" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFo_lR-qLIrNesg-1CICls32qvjmg724E4FCLG18ZjiLdyF2Jnr6eWon5o-Yh4s8fduiaH4hfDdXYzZTlndWW-IPw-O3XlKcbLMVVjb2mNRWockOld8zait593SE3Zgo3-V-hGPq6rD7JV8OzyVmCWiAZPVSf5TgbQEMdZgGdvLyg3Kp-SzsSqBI5Uc4LGxImyqb6Lkwmi0pSp5fQmq9ZqsWqbSiRyXDK4BbrAElfOcuy9MqUb-tlqKDOSozfg1t-WFhqOwEZZ0Q"/> Java
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="JavaScript" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwuu2Gnf1cXGVmGPL3kQSHk9jJDHceGQ2d3zqiRMwUNP289qDKUzH2tDtcUzOSpOvG2FlB-4V05j33c9B-ZeUueF9AcvsoxLutO4mjR6qN9CohatXYkDcAqZHkp1WOTGlrOFZ1RPxNv5T4bX-OmUSdYq1ugOOJmwdLzpzck818KDUbAHy3sq-JHpECELpnK0AwV5GVM-bKgeT62Muqc0BRdFIey_qcNdB15QfaHO24kgwJnklOwo_L_Jw1Qn-v8fbryKx41HMBtQ"/> JavaScript
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="SQL" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHhhTdjF3vAqj9mFAguw8CVuFgqmIeENLcijAdcBVV2S1veYqNeJD6SvqkQgh5sl_-5-8b90ulCa00KhD6wa43jstbLppruM0WA80BG7ZRgVjKBOVP9eo-LDXDpINX8UyTvqqmomAEb0lhWrtnxvJS3jncWNrXhLCjUbGf8ouzz7np4WPJgri4MvshNO6h3zWFrwmK7s9_mWoEEFhH8NhiBh_msmR_5cnunrKizxNr22LqfmjZSW9MR9uPtTSczpZ1TijeWIxttA"/> SQL
+                            </div>
+</div>
+</div>
+<!-- Web -->
+<div class="glass-card p-8 rounded-[2.5rem] relative">
+<span class="absolute top-8 right-8 text-xs font-bold text-on-surface-variant/30">02</span>
+<h3 class="font-bold text-xl mb-8">Web</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="HTML" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBozH7-gIBg5cvZnZbrAFpsa-xpQILiJruV6rXhzds6IxkfNznhxHcaSj07LFpZjv8XbmYlWGqCbR9-K3fHA3JY1zzUYNkbBq2_XNjW_GeOh3NR-1r17k4ZrUBWSzQiMDe0a7QaSRijCczhNsZKcTWAXbpRwN-4wiiZPEddxA6inZkp1SEIiqMH2YeV2TnTinabyLTt4BJVuUc-izI2WOc3gxqzxnNT_qovruV-NnA4ZHu72QURp7oZcVs-hxFkXwb-JgreG90WAg"/> HTML
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="CSS" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASVOdbwYmTgU5Jam6YWUG7Ih2QjY6qmnnZUCIeeyb4W0a6tUPD35PrXH2kuy2IboUjCkgzq3cgifuZt3HnBODAjQxhHNMsmWMPHlZJkEdzgza22NrtZ2WNNWOaAKaHVm3aGCxJ7kxw14mzS4t7ABp5xpKeL5RG380Zlh8BxS8ztmdW8XvvOE5EnfR4pxN09j6p2XjjNJ1lGXKbkg0AQLdAtLc9TEWONK4Y6dJd3-CbU3pmhTSIAjC2pr0LFekRT88Zsi5yCkRNAQ"/> CSS
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="React" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4qhLzKajIB1mHA72rkBR9Q_mAoIMCvxxoq61PF2qMjYLS-qLFLIGstNtUBegw4tWaTe8V0k7CrfNOfc1wYlRl-sF5RwA2gB7_Uv0CwtEavoZDW72Ztixz48fh05FTqafFYW9b4LgF8uuEbdkroFxkLR9ELCQRKMhzC9IQTOo4nnimmTrML7Rc1md6day3DjSu1br9r6iAUnchQHOUXlCbQW2_SaGPG6L-9Op2mx_sZ-DnqKCx8chKw-hPoiQrMLdkPwn4rFVL4Q"/> React
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="Node.js" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP_HbVax5RHXaXJCnHU28kRxHHiau7OEl-YUh22rhWsqzjWCYs5Hgiwl8Y25swlZKcvs4fbwmum8l08SRaFV1UVQ8QFCle4lDsKbhkY9kWrQAfo9iIWOk45psYVq9mdN2b5hnbKrjRdzSPNcbXm0fIAMgYGX8WNF50lstNosxV6eom8xvsBoyid2ytImgIQyTsnwKLGFzMT1ujg1NQeOjTWveLHx6oxlHVBSqt-ll4AgUvcJx-7nNKlCQ45rnPZIvRQCtnlajidg"/> Node.js
+                            </div>
+</div>
+</div>
+<!-- Tools -->
+<div class="glass-card p-8 rounded-[2.5rem] relative">
+<span class="absolute top-8 right-8 text-xs font-bold text-on-surface-variant/30">03</span>
+<h3 class="font-bold text-xl mb-8">Tools</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="Git" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf1Jghq4XOKm7WkgpwlRD7A41BdRzgoto5x8sTbjpGF4JQDsDQudWNCsmYTYaPnDB0G0xZ_BK8YG6MMX2Nzlu8lKn73Rb9w1qgGJrfZcdSRz7zly4GYSm6PY3t4D6lFR_O89TWdX8FbSqmrAZAqJMfY2wklkNrkPDYX-pzjLjPyhx4Kh6iVFXVQo8iJ5jRPTi6h3Zrl34-QYYNo47vcnFqbhLz-uH4M8hRn0Xml1JMuK-gCo_AvCpn7EC8uNVz7RHBPeaBnjrU1A"/> Git
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<img alt="GitHub" class="w-4 h-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr6cqTInt4HRkDXDSiHIxy4hlHwvyrgRcfe9UQ2ViwjDc0Yi6WyVtyJiOdjtuqs_GeHickrHELiAgASQ7a9w8H4DRnPWaYKSyBBqkBKN8_QQpW_ffibwm8pAaguu2L9XL3rH52I9kgfq0kbwPOaA--QDKxgTjL-Jco9fyfmrwMTGWrge99QGycaH9_wO_mHpfHarvggtVOJKdacLZTW75W9fDURxf2rU_Z7ygM9uLFFrRHPvfPiSK7Jg2IVMxdHFdN1vrVdYt1Rw"/> GitHub
+                            </div>
+</div>
+</div>
+<!-- Domains -->
+<div class="glass-card p-8 rounded-[2.5rem] relative">
+<span class="absolute top-8 right-8 text-xs font-bold text-on-surface-variant/30">04</span>
+<h3 class="font-bold text-xl mb-8">Domains</h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-sm text-primary font-bold">verified_user</span> Cybersecurity
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-sm text-primary font-bold">psychology</span> Machine Learning
+                            </div>
+<div class="flex items-center gap-2 px-4 py-2 glass-card rounded-full text-sm font-medium hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-sm text-primary font-bold">analytics</span> Data Analysis
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-xl px-gutter max-w-container-max mx-auto" id="projects">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-md mb-xl">
+<div class="space-y-sm">
+<div class="flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase">
+<span class="h-px w-8 bg-primary"></span>
+                        03 — Projects
+                    </div>
+<h2 class="font-display text-5xl font-extrabold">Selected work.</h2>
+</div>
+<p class="text-on-surface-variant max-w-md text-lg">A few projects I've built while learning across web, machine learning, and cybersecurity.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Project 1 -->
+<div class="group glass-card rounded-[2.5rem] overflow-hidden border border-white/60 hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105">
+<div class="aspect-video relative overflow-hidden bg-surface-container">
+<img alt="Student Portal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUK7nSpGEgPVa1j2da8AIX4Q4Rc7W3CdbthOx19d5Z3SyQzNyuHzCplFsvm6hM9pety6FJbB55NkKN6E2HTU_d2ynSmawiaKpMLRhe1E7q0FV_DKgc5SMZZNWYozEetlGPL4nzX3s0akkJcnbFNWlelFZh-6MhcYbklufK1-mqsbouDVx11GjkG7QrhU5lpPLPW0X8BjdWglP6xR9-yuSdl3mpHIkhfsocp7NiXAQ8hptT21rpigfvOK1jX98w9r7UNoSG8t8n2A"/>
+<div class="absolute top-4 left-4 px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full text-[10px] font-bold uppercase tracking-widest border border-white/40">Full-stack web app</div>
+</div>
+<div class="p-8 space-y-md">
+<h3 class="font-bold text-2xl group-hover:text-primary transition-colors">Student Portal Application</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">A web portal for students to access courses, grades, and announcements with role-based dashboards for staff and learners.</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">React</span>
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">Node.js</span>
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">SQL</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group glass-card rounded-[2.5rem] overflow-hidden border border-white/60 hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105">
+<div class="aspect-video relative overflow-hidden bg-surface-container">
+<img alt="IPL Match Prediction" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPgn-2SAR-YDkISM0HfSWFoaucUAJ3VbkKtZ_29gWw7wnsNb5jJaPBCuZSyPzxFtlEQiL5JttgNcdOIOB3Lp18vKri-FvQeKv-a754O0P1CQ-_ZM5tT9M59JHY5QeBnSOfnQcOGM9eZyMjDziURyJWvV2CxyQ4j0wmcku60P0QWV2bTfdEvT9lzwh8jMaukklYjIR2kFOhg6-jPJVAPAsYRiNEyAwN4x41RJsl5owtkdRQsdJcNS0qeplkFhh8MbtWh78h-w0A-w"/>
+<div class="absolute top-4 left-4 px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full text-[10px] font-bold uppercase tracking-widest border border-white/40">Machine learning</div>
+</div>
+<div class="p-8 space-y-md">
+<h3 class="font-bold text-2xl group-hover:text-primary transition-colors">IPL Match Prediction System</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">A predictive analytics model trained on historical IPL data to estimate match outcomes using classification and feature engineering.</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">Python</span>
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">ML</span>
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">Data Analysis</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group glass-card rounded-[2.5rem] overflow-hidden border border-white/60 hover:shadow-xl transition-all hover:-translate-y-2 hover:scale-105">
+<div class="aspect-video relative overflow-hidden bg-surface-container">
+<img alt="Phishing Awareness" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcD9eDAz77vaDIfq7hmH8nql5rtpw0t1ET83q5X3An_M-xaNPGXD-DJIUBKBY0xZ9uwhcdLC4zx4jQxD8d3kSgM2P1xrGeYQcb6Odylg3tWTQ3-BYZrOlDA3nmcvf0QmF_3VjDdlxBi8yOABLazkezT5OIq7-OKuVN_BhfVjkMizOYxuAaB2-DcFAFL-s6ui-SXSEKULdzIQdjCOZ3Cvt2vOcgWIX7F6r2iKY-iZtkdIHv6vcIKNYex49KiwnetCa-0CT1odEW9w"/>
+<div class="absolute top-4 left-4 px-3 py-1 bg-white/80 backdrop-blur-sm rounded-full text-[10px] font-bold uppercase tracking-widest border border-white/40">Cybersecurity</div>
+</div>
+<div class="p-8 space-y-md">
+<h3 class="font-bold text-2xl group-hover:text-primary transition-colors">Phishing Awareness Training</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">An interactive training presentation that teaches users how to spot, report, and respond to phishing attempts with real-world examples.</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">Cybersecurity</span>
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">Research</span>
+<span class="px-3 py-1 bg-white/40 backdrop-blur-sm border border-white/60 rounded-full text-[10px] font-bold uppercase tracking-tight text-on-surface-variant/70">Education</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl bg-[#0a0f1e] text-white dark-grid-bg relative overflow-hidden" id="contact">
+<div class="px-gutter max-w-container-max mx-auto relative z-10">
+<div class="space-y-sm mb-16">
+<div class="flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase">
+<span class="h-px w-8 bg-primary"></span>
+                        04 — Contact
+                    </div>
+<h2 class="font-display text-5xl font-extrabold">Let's build<br/>something together.</h2>
+<p class="text-white/60 max-w-xl text-lg pt-4">I'm open to internships, collaborations, and friendly chats about software, security, and AI. Reach out — I'll get back to you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md mb-16">
+<a class="dark-glass-card p-8 rounded-3xl transition-all group block hover:bg-white/10 hover:border-primary/50" href="mailto:samyan907906@gmail.com">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<p class="text-xs font-bold text-white/40 uppercase tracking-widest mb-2">Email</p>
+<p class="text-lg font-bold mb-1">samyan907906@gmail.com</p>
+<p class="text-xs text-white/40">Click to copy</p>
+</a>
+<a class="dark-glass-card p-8 rounded-3xl transition-all group block hover:bg-white/10 hover:border-primary/50" href="https://github.com/Samyan09" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary mb-6">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</div>
+<p class="text-xs font-bold text-white/40 uppercase tracking-widest mb-2">GitHub</p>
+<p class="text-lg font-bold mb-1">@Samyan09</p>
+<p class="text-xs text-white/40">Code &amp; open source</p>
+</a>
+<a class="dark-glass-card p-8 rounded-3xl transition-all group block hover:bg-white/10 hover:border-primary/50" href="https://www.linkedin.com/in/samyan-garg-a58375369" rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary mb-6">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</div>
+<p class="text-xs font-bold text-white/40 uppercase tracking-widest mb-2">LinkedIn</p>
+<p class="text-lg font-bold mb-1">Samyan Garg</p>
+<p class="text-xs text-white/40">Let's connect professionally</p>
+</a>
+</div>
+<div class="flex flex-wrap gap-md">
+<a class="bg-white text-black px-10 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-white/90 transition-all" href="mailto:samyan907906@gmail.com">
+                        Send Email <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+<a class="dark-glass-card border border-white/20 px-10 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-white/10 transition-all text-white" href="#">
+                        Download Resume
+                    </a>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white/60 backdrop-blur-md py-12 px-gutter border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto w-full">
+<div class="flex flex-col md:flex-row justify-between items-center gap-lg">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-on-primary font-bold">SG</div>
+<span class="font-bold text-lg tracking-tight">Samyan.dev</span>
+</div>
+<p class="text-on-surface-variant text-sm font-medium">© 2024 Samyan Garg. All rights reserved.</p>
+<div class="flex items-center gap-8 text-sm font-bold text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="https://github.com/Samyan09">GitHub</a>
+<a class="hover:text-primary transition-colors" href="https://www.linkedin.com/in/samyan-garg-a58375369">LinkedIn</a>
+<a class="hover:text-primary transition-colors" href="mailto:samyan907906@gmail.com">Email</a>
+</div>
+</div>
+<div class="flex justify-center md:justify-end gap-6 mt-8 text-[11px] font-bold uppercase tracking-widest text-on-surface-variant/40">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal effect for navigation shadow
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('header');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+                nav.style.backgroundColor = 'rgba(247, 249, 251, 0.8)';
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.style.backgroundColor = 'rgba(247, 249, 251, 0.6)';
+            }
+        });
+    </script>
+</body></html>
